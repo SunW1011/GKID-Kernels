@@ -21,8 +21,10 @@ if [ "$KSU_SUSFS" = "true" ]; then
   apply_config "$WORKDIR/configs/susfs.config" "$DEFCONFIG"
 fi
 
-echo "⚙️ Adding Compatibility GKI Networking and Filesystem configs"
-apply_config "$WORKDIR/configs/compat.config" "$DEFCONFIG"
+if ! { kernel_version_eq "$KERNEL_VERSION" "5.10" || kernel_version_eq "$KERNEL_VERSION" "6.12"; }; then
+  echo "⚙️ Adding Compatibility GKI Networking and Filesystem configs"
+  apply_config "$WORKDIR/configs/compat.config" "$DEFCONFIG"
+fi
 
 echo "⚙️ Adding Universal Performance Tuning"
 apply_config "$WORKDIR/configs/custom.config" "$DEFCONFIG"
