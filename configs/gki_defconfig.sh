@@ -16,6 +16,9 @@ CONFIG_KPM=y
 EOF
 fi
 
+echo "🧩 Adding Built-in Features"
+apply_config "$WORKDIR/configs/features.config" "$DEFCONFIG"
+
 if [ "$KSU_SUSFS" = "true" ]; then
   echo "🔧 Mode: SuSFS Hook Enabled"
   apply_config "$WORKDIR/configs/susfs.config" "$DEFCONFIG"
