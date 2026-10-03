@@ -26,7 +26,13 @@
 
 ## ❤️ Support This Project
 
-**[Donations](https://github.com/ahmed-alnassif#-support-my-work)**
+**Tron (TRC20):** `TK7s2HGGWoLuefoznbVMZdiCpEwSTvZ1CV`
+
+**Bitcoin (BTC):** `bc1qstka58vn66qutzhgaalxfm7jn4d7xmgkze26sk`
+
+**Ethereum (ERC20):** `0xa13F8baaa24b563896a8ddAA3089317d43344C55`
+
+**ShamCash:** `a7da9b01b8faf8e3b3839f1b9f2b8d04`
 
 Your donations keep this project alive! I spend countless hours maintaining kernel builds for 5 different versions, fixing bugs, adding features, and supporting users. **Every donation matters!** 🙏
 
